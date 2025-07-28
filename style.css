@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-/* Main content layout */
+
 main {
   min-height: 100vh;
   display: flex;
@@ -32,7 +32,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* Game container */
 .container {
   display: flex;
   justify-content: center;
@@ -49,7 +48,6 @@ h1 {
   gap: 1.5vmin;
 }
 
-/* Each box in the grid */
 .box {
   height: 18vmin;
   width: 18vmin;
@@ -69,7 +67,6 @@ h1 {
   cursor: not-allowed;
 }
 
-/* Buttons */
 #reset-btn,
 #new-btn {
   padding: 1rem 2rem;
@@ -86,14 +83,12 @@ h1 {
   background-color: #e794a2;
 }
 
-/* Win message styling */
 #msg {
   color: white;
   font-size: 8vmin;
   text-align: center;
 }
 
-/* Fullscreen message container when winner is declared */
 .msg-container {
   position: fixed;
   top: 0;
@@ -110,12 +105,10 @@ h1 {
   text-align: center;
 }
 
-/* Hidden by default */
 .hide {
   display: none;
 }
 
-/* Optional image icons */
 .icon {
   width: 20vmin;
   height: 20vmin;
