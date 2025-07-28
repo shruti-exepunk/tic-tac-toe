@@ -4,7 +4,7 @@ let newGameBtn = document.querySelector("#new-btn");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
 
-let turnO = true; // true: strawberry (O), false: cupcake (X)
+let turnO = true; 
 
 const winPatterns = [
   [0,1,2],
@@ -17,7 +17,7 @@ const winPatterns = [
   [6,7,8],
 ];
 
-// Set image file paths (you can also use full URLs)
+
 const cupcakeImg = "cupcake.png";
 const strawberryImg = "strawbery.png";
 
@@ -36,7 +36,7 @@ const disableBoxes = () => {
 const enableBoxes = () => {
   boxes.forEach((box) => {
     box.disabled = false;
-    box.innerHTML = ""; // Remove the image
+    box.innerHTML = "";
     box.removeAttribute("data-value");
   });
 };
@@ -46,7 +46,7 @@ const showWinner = (winner) => {
   msgContainer.classList.remove("hide");
   disableBoxes();
 
-  // 🎉 Confetti animation
+ 
   confetti({
     particleCount: 150,
     spread: 80,
